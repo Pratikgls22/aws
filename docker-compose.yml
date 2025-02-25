@@ -11,8 +11,7 @@ services:
       - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
-    networks:
-      - springboot-network
+
 
   springboot-app:
     container_name: springboot-app
@@ -23,49 +22,11 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/scanner_db
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
-      CLUSTER_NAME: elastic
-      CLUSTER_NODES: elastic:9201
+
     ports:
       - "9091:9090"
     depends_on:
       - mysql
-#      - elasticsearch
-    networks:
-      - springboot-network
-
-networks:
-  springboot-network:
 
 volumes:
   mysqldata:
-
-
-
-
-
-
-
-
-
-#
-#  elasticsearch:
-#    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.0
-#    volumes:
-#      - esdata:/usr/share/elasticsearch/data
-#    environment:
-#      - discovery.type=single-node  # Run as single-node cluster
-#      - cluster.name=elastic
-#      - http.host=0.0.0.0
-#      - transport.host=elastic
-#      - network.host=0.0.0.0
-#      - xpack.security.enabled=false
-#      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-#    ports:
-#      - "9201:9200"  # Expose port 9200 for Elasticsearch
-#    networks:
-#      - springboot-network
-#    healthcheck:
-#      test: [ "CMD", "curl", "-f", "http://localhost:9200/_cluster/health" ]
-#      interval: 10s
-#      retries: 5
-#      start_period: 30s
