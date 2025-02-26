@@ -1,0 +1,7 @@
+com/onlineportal/qrscanner/entity/ProductEntity.class
+com/onlineportal/qrscanner/service/ProductService.class
+com/onlineportal/qrscanner/requestDto/ProductDto.class
+com/onlineportal/qrscanner/repository/ProductRepository.class
+com/onlineportal/qrscanner/QrscannerApplication.class
+com/onlineportal/qrscanner/service/impl/ProductServiceImpl.class
+com/onlineportal/qrscanner/controller/QrCodeController.class

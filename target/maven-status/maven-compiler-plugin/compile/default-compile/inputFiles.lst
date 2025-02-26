@@ -1,0 +1,10 @@
+/home/dev1071/Downloads/qrscanner/src/main/java/com/onlineportal/qrscanner/QrscannerApplication.java
+/home/dev1071/Downloads/qrscanner/src/main/java/com/onlineportal/qrscanner/config/ElasticsearchConfig.java
+/home/dev1071/Downloads/qrscanner/src/main/java/com/onlineportal/qrscanner/controller/QrCodeController.java
+/home/dev1071/Downloads/qrscanner/src/main/java/com/onlineportal/qrscanner/elasticEntity/ProductElasticEntity.java
+/home/dev1071/Downloads/qrscanner/src/main/java/com/onlineportal/qrscanner/elasticRepository/ProductElasticRepository.java
+/home/dev1071/Downloads/qrscanner/src/main/java/com/onlineportal/qrscanner/entity/ProductEntity.java
+/home/dev1071/Downloads/qrscanner/src/main/java/com/onlineportal/qrscanner/repository/ProductRepository.java
+/home/dev1071/Downloads/qrscanner/src/main/java/com/onlineportal/qrscanner/requestDto/ProductDto.java
+/home/dev1071/Downloads/qrscanner/src/main/java/com/onlineportal/qrscanner/service/ProductService.java
+/home/dev1071/Downloads/qrscanner/src/main/java/com/onlineportal/qrscanner/service/impl/ProductServiceImpl.java
